@@ -1,6 +1,5 @@
 import React from 'react';
 import DayListItem from './DayListItem.js';
-// import days from '../../stories/index.js';
 
 export default function DayList(props) {
   console.log('props:', props);
