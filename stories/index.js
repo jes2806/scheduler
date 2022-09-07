@@ -3,6 +3,7 @@ import DayListItem from '../src/components/DayListItem.js';
 import DayList from '../src/components/DayList.js';
 import InterviewerListItem from '../src/components/InterviewerListItem';
 import InterviewerList from '../src/components/InterviewerList';
+import Appointment from "components/Appointment/index.js";
 
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
@@ -132,3 +133,10 @@ storiesOf("InterviewerList", module)
       onChange={action("setInterviewer")}
     />
   ));
+
+storiesOf("Appointment", module)
+  .addParameters({
+    backgrounds: [{ name: "white", value: "#fff", default: true }]
+  })
+  .add("Appointment", () => <Appointment />)
+  .add("Appointment with Time", () => <Appointment time="12om" />);
