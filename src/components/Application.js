@@ -64,6 +64,7 @@ const days = [
 export default function Application(props) {
 
   const [day, setDay] = useState('Monday');
+  const appointmentList = Object.values(appointments).map(appointment => { return (<Appointment key={appointment.id} {...appointment} />) });
 
   return (
     <main className="layout">
@@ -88,7 +89,7 @@ export default function Application(props) {
         />
       </section>
       <section className="schedule">
-        <Appointment key={Object.values(appointments).map()} />
+        {appointmentList}
         <Appointment key="last" time="5pm" />
       </section>
     </main>
