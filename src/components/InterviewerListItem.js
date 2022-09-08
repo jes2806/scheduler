@@ -5,7 +5,7 @@ import classNames from 'classnames/bind';
 
 export default function InterviewerListItem(props) {
 
-  const interviewerClass = classNames('interviewiers__item', { 'interviewers__item--selected': props.selected })
+  const interviewerClass = classNames('interviewers__item', { 'interviewers__item--selected': props.selected })
   // const [interviewer, setInterviewer] = useState(props.id);
   const nameSelected = props.selected && props.name
 
