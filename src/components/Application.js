@@ -4,6 +4,7 @@ import "components/Application.scss";
 import Appointment from "components/Appointment";
 import { getAppointmentsForDay, getInterview } from "../helpers/selectors";
 import axios from 'axios';
+import useVisualMode from  '../hooks/useVisualMode';
 
 
 
