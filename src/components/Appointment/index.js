@@ -72,6 +72,7 @@ export default function Appointment(props) {
         <Confirm
           message="Are you sure you wish to delete this appointment?"
           onConfirm={deleting}
+          onCancel={back}
         />}
       {mode === EDITING &&
         <Form
@@ -81,7 +82,7 @@ export default function Appointment(props) {
           student={props.interview.student}
           interviewer={props.interview.interviewer.id}
         />}
-      {mode === ERROR_DELETE && <Error message={"Error canceling the appointment"} onClose={back} />}
+      {mode === ERROR_DELETE && <Error message={"Could not delete"} onClose={back} />}
       {mode === ERROR_SAVE && <Error message={"Error saving the appointment"} onClose={back} />}
     </article>
   )
