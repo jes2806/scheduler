@@ -25,7 +25,7 @@ export default function Application(props) {
           bookInterview={bookInterview}
           cancelInterview={cancelInterview}
         />
-        
+
       );
     }
   );
@@ -59,4 +59,4 @@ export default function Application(props) {
       </section>
     </main>
   );
-}
+};
