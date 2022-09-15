@@ -56,6 +56,8 @@ npm start
 ```
 ## Running Storybook Visual Testbed
 
+-Node v 12.x.x required to run Storybook
+
 ```sh
 npm run storybook
 ```
@@ -64,3 +66,9 @@ npm run storybook
 ```sh
 npm test
 ```
+
+## Scheduler-Api
+The following link provides the data for the scheduler-api:
+
+-https://github.com/lighthouse-labs/scheduler-api
+
