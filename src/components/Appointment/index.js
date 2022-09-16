@@ -83,7 +83,7 @@ export default function Appointment(props) {
           interviewer={props.interview.interviewer.id}
         />}
       {mode === ERROR_DELETE && <Error message={"Could not delete"} onClose={back} />}
-      {mode === ERROR_SAVE && <Error message={"Error saving the appointment"} onClose={back} />}
+      {mode === ERROR_SAVE && <Error message={"Error saving the appointment"} onClose={back}/>}
     </article>
   )
 };
